@@ -12,4 +12,15 @@ RSpec.describe Calculator do
       expect(calculator.add(2, 5, 7)).to eql(14)
     end
   end
+  describe "#multiply" do
+    it "returns the multiplication of two numbers" do
+      calculator = Calculator.new
+      expect(calculator.multiply(5, 2)).to eql(10)
+    end
+
+    it "returns the multiplication of more than two numbers" do
+      calculator = Calculator.new
+      expect(calculator.multiply(2, 5, 7)).to eql(70)
+    end
+  end
 end
