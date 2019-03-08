@@ -23,4 +23,16 @@ RSpec.describe Calculator do
       expect(calculator.multiply(2, 5, 7)).to eql(70)
     end
   end
+
+  describe "#substract" do
+    it "returns the substraction of two numbers" do
+      calculator = Calculator.new
+      expect(calculator.substract(5, 2)).to eql(3)
+    end
+
+    it "returns the substraction of more than two numbers" do
+      calculator = Calculator.new
+      expect(calculator.substract(2, 5, 7)).to eql(4)
+    end
+  end
 end
