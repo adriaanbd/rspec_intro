@@ -1,5 +1,5 @@
 class Calculator
-  def add(a, b)
-  	a + b
+  def add(*args)
+    args.inject(0) { |sum, i| sum + i}
   end
 end
