@@ -10,4 +10,8 @@ class Calculator
   def substract(*args)
     args.inject { |result, i| result - i }
   end
+
+  def divide(*args)
+    args.inject { |result, i| result / i }
+  end
 end

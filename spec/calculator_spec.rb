@@ -34,11 +34,11 @@ RSpec.describe Calculator do
 
   describe "#divide" do
     it "dividees with two numbers" do
-      expect(calculator.divide(5, 2)).to eql(3)
+      expect(calculator.divide(5, 2)).to eql(2)
     end
 
     it "divides with more than two numbers" do
-      expect(calculator.divide(2, 5, 7)).to eql(-10)
+      expect(calculator.divide(5, 2, 7)).to eql(0)
     end
   end
 end
