@@ -4,7 +4,7 @@
 
 1. Make sure you have rspec installed `gem install rspec`
 2. Inside your working directory, run `rspec --init`
-3. You should now have `.rspec`, `/lib`, `/spec' and `/spec/spec_helper.rb`
+3. You should now have `.rspec`, `/lib`, `/spec` and `/spec/spec_helper.rb`
 4. Create your spec file inside the `/spec` directory, i.e. `calculator_spec.rb`
 5. Add your main script inside the `/lib` directory, i.e. `calculator.rb`
 6. In your spec script, make sure you require your main script `require './lib/calculator'`
